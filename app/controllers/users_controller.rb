@@ -8,5 +8,7 @@ class UsersController < ApplicationController
     # @rental_requests = @boat.rentals
     # @rentals = @user.docks.rentals
   end
-  
+  def index
+    @users = User.all
+  end
 end
